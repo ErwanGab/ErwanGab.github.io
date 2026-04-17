@@ -122,6 +122,32 @@
 .certification-description {
     font-size: 16px;
 }
+.certification-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-items: center;
+}
+
+.certification-badge {
+  width: 100px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.certification-badge:hover {
+  transform: scale(1.1);
+}
+
+.certification-section {
+  margin-bottom: 30px;
+}
+
+.certification-section-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
 
 		</style>
 	</head>
@@ -144,7 +170,7 @@
 		<!-- Section Profil -->
 		<fieldset class="title" id="profile">
 			<legend>Erwan Gaborit</legend>
-			<p>19 ans né le 30/11/2005</p>
+			<p>20 ans né le 30/11/2005</p>
 			<p>Contact: erwan.g74150@gmail.com +33 06 24 43 49 72</p>
 			<p>Adresse: 61 Route de la Fuly, 74150 Rumilly, France</p>
 			<p>Profil Linkedin: <a href="https://www.linkedin.com/in/erwan-gaborit-7b13a934a/">Lien vers Linkedin</a></p>
@@ -155,7 +181,8 @@
 		<!-- Section Cursus -->
 		<fieldset class="title" id="cursus">
 			<legend>Cursus</legend>
-			<p>Septembre 2024: Entrée en <strong>BTS SIO option SLAM</strong>. Etablissement Saint Michel, 74000 Annecy</p>
+			<p> Septembre 2025: Entrée en deuxième <strong>BTS SIO option SLAM</strong>. Etablissement Saint Michel, 74000 Annecy</p>
+			<p>Septembre 2024-Juin 2025: Première <strong>BTS SIO option SLAM</strong>. Etablissement Saint Michel, 74000 Annecy</p>
 			<p>Septembre 2023-Juin 2024: Première année de DUT <strong>génie électrique informatique industrielle</strong>. IUT Savoie Mont Blanc, 74940 Annecy-Le-Vieux</p>
 			<p>Juin 2023: Obtention du <strong>baccalauréat STIDD (de science technologique de l'industrie et du développement durable) option SIN (Systèmes Informatique Numérique)</strong>. lycée de l'albanais, 74150 Rumilly</p>
 		</fieldset>
@@ -165,8 +192,8 @@
 		<!-- Section Compétences -->
 		<fieldset class="title" id="competences">
 			<legend>Compétences</legend>
-			<p>En langages informatique: C++, Python, HTML, CSS</p>
-			<p>En informatique: création de machine virtuelle, mise en place de serveur, gestion de données de type SQL, démontage et montage d'ordinateur</p>
+			<p>En langages informatique: C++, Python, HTML, CSS, PHP, C#</p>
+			<p>En informatique: création de machine virtuelle, mise en place de serveur wamp, gestion de données de type SQL.</p>
 			<p>En langue: anglais courant et technique</p>
 		</fieldset>
 
@@ -174,343 +201,160 @@
 
 <!-- Section Certifications -->
 <div class="container" id="certifications">
-	<fieldset class="title">
-		<legend>Certifications</legend>
+  <fieldset class="title">
+    <legend>Certifications</legend>
 
-		<!-- Section HTML -->
-		<div class="certification-section">
-			<div class="certification-section-title">HTML</div>
-			<table class="certification-table">
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/N2QAH6HF?sharingId=554574D218CAB98D">
-							<img class="certification-badge" src="https://learn.microsoft.com/en-us/training/achievements/build-first-html-webpage.svg" alt="Certification HTML">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Introduction à la création de pages HTML</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/UY27F8S3?sharingId=554574D218CAB98D">
-							<img class="certification-badge" src="https://learn.microsoft.com/en-us/training/achievements/use-css-styles.svg" alt="Certification CSS">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Utilisation des styles CSS pour la mise en forme</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/ESCGJRFP?sharingId=554574D218CAB98D">
-							<img class="certification-badge" src="https://learn.microsoft.com/en-us/training/achievements/student-evangelism/web-development-101-accessibility.svg" alt="Certification Accessibilité">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description style="font-weight:bold"">Principes d'accessibilité pour le développement web</p>
-					</td>
-				</tr>
-			</table>
-		</div>
+    <!-- HTML -->
+    <div class="certification-section">
+      <div class="certification-section-title">HTML</div>
+      <div class="certification-grid">
 
-		<!-- Section Python -->
-		<div class="certification-section">
-			<div class="certification-section-title">Python</div>
-			<table class="certification-table">
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/VDSKQKJM?sharingId=554574D218CAB98D">
-							<img class="certification-badge" src="https://learn.microsoft.com/en-us/training/achievements/intro-to-python.svg" alt="Certification Python">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Introduction à la programmation Python</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/CFRW3TN9?sharingId=554574D218CAB98D">
-							<img class="certification-badge" src="https://learn.microsoft.com/en-us/training/achievements/python-create-run-program.svg" alt="Certification Python Program">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Création et exécution de programmes Python</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/N2Q7A5TF?sharingId=554574D218CAB98D">
-							<img class="certification-badge" src="https://learn.microsoft.com/en-us/training/achievements/python-use-boolean-types.svg" alt="Certification Python Boolean">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Utilisation des types booléens en Python</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/DC3GC8HJ?sharingId=554574D218CAB98D">
-							<img class="certification-badge" src="https://learn.microsoft.com/en-us/training/achievements/python-math-operators.svg" alt="Certification Python Math">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Opérateurs mathématiques en Python</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/VDSKJPVM?sharingId=554574D218CAB98D">
-							<img class="certification-badge" src="https://learn.microsoft.com/en-us/training/achievements/intro-python-lists.svg" alt="Certification Python Lists">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Introduction aux listes en Python</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/CF7YLRC9?sharingId=554574D218CAB98D">
-							<img class="certification-badge" src="https://learn.microsoft.com/en-us/training/achievements/python-loops.svg" alt="Certification Python Loops">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Utilisation des boucles en Python</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/HAMZH2V8?sharingId=554574D218CAB98D">
-							<img class="certification-badge" src="https://learn.microsoft.com/en-us/training/achievements/python-dictionaries.svg" alt="Certification Python Dictionaries">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Introduction aux dictionnaires en Python</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/DC83SUXJ?sharingId=554574D218CAB98D">
-							<img class="certification-badge" src="https://learn.microsoft.com/en-us/training/achievements/functions-python.svg" alt="Certification Python Functions">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Création et utilisation de fonctions en Python</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/J9WHGWKT?sharingId=554574D218CAB98D">
-							<img class="certification-badge" src="https://learn.microsoft.com/en-us/training/achievements/python-error-handling.svg" alt="Certification Python Error Handling">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Gestion des erreurs en Python</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/3RVZFV6H?sharingId=554574D218CAB98D">
-							<img class="certification-badge" src="https://learn.microsoft.com/en-us/training/achievements/beginner-python.svg" alt="Certification Python Beginner">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description" style="font-weight:bold">Niveau débutant en Python</p>
-					</td>
-				</tr>
-			</table>
-		</div>
-		<!--- Section C# --->
-		<div class="certification-section">
-			<div class="certification-section-title">C#</div>
-			<table class="certification-table">
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/4L7P2ZRK?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/csharp-write-first.svg" alt="Certification csharp write first">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Ecrire vos premières lignes de code en C#</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/XM9FXMXY?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/csharp-literals-variables.svg" alt="Certification csharp litterals variables">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Stocker et récupérer des données avec des valeurs littérales et de variables en C#</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/APHAM3U7?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/csharp-basic-formatting.svg" alt="Certification csharp basic formatting">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Effectuer une mise en forme de chaîne de base en C#</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/APHA42Y7?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/csharp-basic-operations.svg" alt="Certification csharp basic operations">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Effectuer des opérations simples sur les nombres en C#</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/QT7TCFWE?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/guided-project-calculate-print-student-grades.svg" alt="Certification guided project calculate print student grades">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Projet guidé - Calculer et imprimer les notes des étudiants</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/J9P9XKYT?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/guided-project-calculate-final-gpa.svg" alt="Certification guided project calculate final-gpa">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Projet guidé - Calculer la note moyenne finale</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/3RGRECEH?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/get-started-c-sharp-part-1.svg" alt="Certification get started csharp part 1">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description" style="font-weight:bold">Écrivez votre premier code à l’aide de C# (Bien démarrer avec C#, partie 1)</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/UYLYBFG3?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/install-configure-visual-studio-code.svg" alt="Certification install configure visual studio code">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Installer et configurer Visual Studio Code pour le développement en C#</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/CF6SWP69?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/csharp-call-methods.svg" alt="Certification-Csharp-Call-Method">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Appeler des méthodes à partir de la bibliothèque de classes .NET en utilisant C#</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/HA367VK8?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/csharp-if-elseif-else.svg" alt="Certification-Csharp-if-eles">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Ajoutez une logique de décision à votre code à l’aide des instructions « if », « else » et « else if » en C#</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/CF6SY6W9?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/csharp-arrays.svg" alt="Certification-csharp-arrays">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Stocker et itérer dans des séquences de données en utilisant des tableaux et l’instruction foreach en C#</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/4LPVUC6K?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/csharp-readable-code.svg" alt="Certification-csharp-readable-code">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Créez du code lisible avec des conventions, des espaces blancs et des commentaires en C#</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/K6J5FGSB?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/guided-project-arrays-iteration-selection.svg" alt="Certification-csharp-guided-project-arraysèiteration-selection">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Projet guidé - Développer des structures foreach et if-elseif-else pour traiter des données de tableau en C#</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/A42QG8E7?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/challenge-project-arrays-iteration-selection.svg" alt="Certification-sharp-challenge-project-arrays">
-						</a>
-					</td>
-					<td> 
-						<p class="certification-description">Projet de défi - Développer des structures foreach et if-elseif-else pour traiter des données de tableau en C#</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/PLBTW7T4?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/get-started-c-sharp-part-2.svg" alt="certification-csharp-get-started-c-sharp-part-2">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description" style="font-weight:bold">Créer et exécuter des applications console C# simples (Bien démarrer avec C#, partie 2)</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/E5KJRWBP?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/dotnet-introduction.svg" alt="certification-dotnet-introduction">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Introduction à .NET</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/H7NY62R8?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/dotnet-dependencies.svg" alt="certification-dotnet-dependencies">
-						</a>
-					</td>
-					<td>
-						<p class="certification-description">Création d’un projet .NET et utilisation des dépendances</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/JU564K4T?sharingId=554574D218CAB98D">
-						<img class="certification-badge" src="https://learn.microsoft.com/training/achievements/dotnet-debug.svg" alt="certification-dotnet-debug">
-						</a>
-					</td>
-					<td> 
-						<p class="certification-description">Déboguer des applications .NET de façon interactive avec le débogueur Visual Studio Code</p>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</div>
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/N2QAH6HF?sharingId=554574D218CAB98D" title="Introduction à la création de pages HTML">
+          <img src="https://learn.microsoft.com/en-us/training/achievements/build-first-html-webpage.svg" class="certification-badge">
+        </a>
 
-		<!-- Bouton de retour en haut -->
-		<a href="#profile" class="button-up">Retour en haut</a>
-	</fieldset>
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/UY27F8S3?sharingId=554574D218CAB98D" title="Utilisation des styles CSS pour la mise en forme">
+          <img src="https://learn.microsoft.com/en-us/training/achievements/use-css-styles.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/ESCGJRFP?sharingId=554574D218CAB98D" title="Principes d'accessibilité pour le développement web">
+          <img src="https://learn.microsoft.com/en-us/training/achievements/student-evangelism/web-development-101-accessibility.svg" class="certification-badge">
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Python -->
+    <div class="certification-section">
+      <div class="certification-section-title">Python</div>
+      <div class="certification-grid">
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/VDSKQKJM?sharingId=554574D218CAB98D" title="Introduction à la programmation Python">
+          <img src="https://learn.microsoft.com/en-us/training/achievements/intro-to-python.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/CFRW3TN9?sharingId=554574D218CAB98D" title="Création et exécution de programmes Python">
+          <img src="https://learn.microsoft.com/en-us/training/achievements/python-create-run-program.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/N2Q7A5TF?sharingId=554574D218CAB98D" title="Utilisation des types booléens en Python">
+          <img src="https://learn.microsoft.com/en-us/training/achievements/python-use-boolean-types.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/DC3GC8HJ?sharingId=554574D218CAB98D" title="Opérateurs mathématiques en Python">
+          <img src="https://learn.microsoft.com/en-us/training/achievements/python-math-operators.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/VDSKJPVM?sharingId=554574D218CAB98D" title="Introduction aux listes en Python">
+          <img src="https://learn.microsoft.com/en-us/training/achievements/intro-python-lists.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/CF7YLRC9?sharingId=554574D218CAB98D" title="Utilisation des boucles en Python">
+          <img src="https://learn.microsoft.com/en-us/training/achievements/python-loops.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/HAMZH2V8?sharingId=554574D218CAB98D" title="Introduction aux dictionnaires en Python">
+          <img src="https://learn.microsoft.com/en-us/training/achievements/python-dictionaries.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/DC83SUXJ?sharingId=554574D218CAB98D" title="Création et utilisation de fonctions en Python">
+          <img src="https://learn.microsoft.com/en-us/training/achievements/functions-python.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/J9WHGWKT?sharingId=554574D218CAB98D" title="Gestion des erreurs en Python">
+          <img src="https://learn.microsoft.com/en-us/training/achievements/python-error-handling.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/3RVZFV6H?sharingId=554574D218CAB98D" title="Niveau débutant en Python">
+          <img src="https://learn.microsoft.com/en-us/training/achievements/beginner-python.svg" class="certification-badge">
+        </a>
+
+      </div>
+    </div>
+
+    <!-- C# -->
+    <div class="certification-section">
+      <div class="certification-section-title">C#</div>
+      <div class="certification-grid">
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/4L7P2ZRK?sharingId=554574D218CAB98D" title="Écrire vos premières lignes de code en C#">
+          <img src="https://learn.microsoft.com/training/achievements/csharp-write-first.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/XM9FXMXY?sharingId=554574D218CAB98D" title="Variables et valeurs littérales en C#">
+          <img src="https://learn.microsoft.com/training/achievements/csharp-literals-variables.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/APHAM3U7?sharingId=554574D218CAB98D" title="Mise en forme de chaîne en C#">
+          <img src="https://learn.microsoft.com/training/achievements/csharp-basic-formatting.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/APHA42Y7?sharingId=554574D218CAB98D" title="Opérations numériques en C#">
+          <img src="https://learn.microsoft.com/training/achievements/csharp-basic-operations.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/QT7TCFWE?sharingId=554574D218CAB98D" title="Projet : calcul de notes étudiants">
+          <img src="https://learn.microsoft.com/training/achievements/guided-project-calculate-print-student-grades.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/J9P9XKYT?sharingId=554574D218CAB98D" title="Projet : calcul GPA final">
+          <img src="https://learn.microsoft.com/training/achievements/guided-project-calculate-final-gpa.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/3RGRECEH?sharingId=554574D218CAB98D" title="Bien démarrer avec C# (partie 1)">
+          <img src="https://learn.microsoft.com/training/achievements/get-started-c-sharp-part-1.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/UYLYBFG3?sharingId=554574D218CAB98D" title="Configurer VS Code pour C#">
+          <img src="https://learn.microsoft.com/training/achievements/install-configure-visual-studio-code.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/CF6SWP69?sharingId=554574D218CAB98D" title="Appel de méthodes .NET en C#">
+          <img src="https://learn.microsoft.com/training/achievements/csharp-call-methods.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/HA367VK8?sharingId=554574D218CAB98D" title="Conditions if / else en C#">
+          <img src="https://learn.microsoft.com/training/achievements/csharp-if-elseif-else.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/CF6SY6W9?sharingId=554574D218CAB98D" title="Tableaux et foreach en C#">
+          <img src="https://learn.microsoft.com/training/achievements/csharp-arrays.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/4LPVUC6K?sharingId=554574D218CAB98D" title="Code lisible en C#">
+          <img src="https://learn.microsoft.com/training/achievements/csharp-readable-code.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/K6J5FGSB?sharingId=554574D218CAB98D" title="Projet : structures foreach et if">
+          <img src="https://learn.microsoft.com/training/achievements/guided-project-arrays-iteration-selection.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/A42QG8E7?sharingId=554574D218CAB98D" title="Projet challenge tableaux">
+          <img src="https://learn.microsoft.com/training/achievements/challenge-project-arrays-iteration-selection.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/PLBTW7T4?sharingId=554574D218CAB98D" title="Bien démarrer avec C# (partie 2)">
+          <img src="https://learn.microsoft.com/training/achievements/get-started-c-sharp-part-2.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/E5KJRWBP?sharingId=554574D218CAB98D" title="Introduction à .NET">
+          <img src="https://learn.microsoft.com/training/achievements/dotnet-introduction.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/H7NY62R8?sharingId=554574D218CAB98D" title="Dépendances .NET">
+          <img src="https://learn.microsoft.com/training/achievements/dotnet-dependencies.svg" class="certification-badge">
+        </a>
+
+        <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/erwangaborit-4857/JU564K4T?sharingId=554574D218CAB98D" title="Debug .NET avec VS Code">
+          <img src="https://learn.microsoft.com/training/achievements/dotnet-debug.svg" class="certification-badge">
+        </a>
+
+      </div>
+    </div>
+
+    <a href="#profile" class="button-up">Retour en haut</a>
+
+  </fieldset>
 </div>
 
 
@@ -519,6 +363,9 @@
 		<!-- Section Projets scolaires -->
 		<fieldset class="title" id="projets">
 			<legend>Projets scolaires</legend>
+			<p>février 2026 - Mai 2026: Création d'une interface admin en C# permettant de traquer différentes informations sur les réservations réalisées via la page web</p>
+			<p>Septembre 2025 - Décembre 2025: Création d'une page web reliée à une BDD permettant la réservation de véhicules </p>
+			<p>Janvier 2025 - Mai 2025: Création d'une page web reliée a une BDD pour traquer le nombre de visiteurs dans un musée.
 			<p>Septembre 2024 - Décembre 2024: en <strong>SIO</strong> projet de création d'une page web pour l'exposition temporaire sur Pierre de Coubertin au palais des lumières d'Evian.</p>
 			<p>Novembre 2023: en <strong>GEII</strong>, projet de création d'un puissance 4 sur Visual Studio en C++ sur une durée totale d'une semaine.</p>
 			<p>Mai 2023: création d'une page web faisant part d'un projet de fin d'année.</p>
